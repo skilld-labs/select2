@@ -1371,11 +1371,11 @@ S2.define('select2/selection/base',[
     this.container = container;
 
     this.$selection.on('focus', function (evt) {
-      self.trigger('focus', evt);
+      // self.trigger('focus', evt);
     });
 
     this.$selection.on('blur', function (evt) {
-      self._handleBlur(evt);
+      // self._handleBlur(evt);
     });
 
     this.$selection.on('keydown', function (evt) {
@@ -5231,7 +5231,7 @@ S2.define('select2/core',[
     });
 
     this.$element.on('focus.select2', function (evt) {
-      self.trigger('focus', evt);
+      // self.trigger('focus', evt);
     });
 
     this._syncA = Utils.bind(this._syncAttributes, this);
@@ -5536,7 +5536,7 @@ S2.define('select2/core',[
     }
 
     this.$container.addClass('select2-container--focus');
-    this.trigger('focus', {});
+    // this.trigger('focus', {});
   };
 
   Select2.prototype.enable = function (args) {
